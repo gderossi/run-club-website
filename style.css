@@ -1,0 +1,151 @@
+/*
+Red: #a51417
+Dark Gray: #6c7373
+Light Gray: #c8c8c8
+Green: #007360
+*/
+@font-face {
+  font-family: "sansProRegular";
+  src: url("fonts/SourceSansPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "sansProBold";
+  src: url("fonts/SourceSansPro-Semibold.otf");
+}
+
+@font-face {
+  font-family: "sansProBlack";
+  src: url("fonts/SourceSansPro-Black.otf");
+}
+
+@font-face {
+  font-family: "lora";
+  src: url("fonts/Lora-Bold.otf");
+}
+
+html{
+  font-family: "sansProRegular", sans-serif;
+  font-size: 24px;
+}
+
+body{
+  margin: 0;
+}
+
+h1, h2, h3{
+  font-family: "sansProBold";
+}
+
+#home{
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#home img {
+  margin: auto;
+  max-height: 800px;
+}
+
+#title{
+  color: white;
+  font-size: 90px;
+  font-family: "lora";
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  text-shadow:
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		2px 2px 0 #000;
+}
+
+#nircaLogo, #wustlLogo{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 100px;
+}
+
+#nircaLogo{
+  left: 150px;
+}
+
+#wustlLogo{
+  right: 150px;
+}
+
+#nircaLogo img, #wustlLogo img{
+  height: 100%;
+  width: 100%;
+}
+
+#header{
+  background-color: #a51417;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 1px 3px 1px gray;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+  margin: auto;
+  font-size: 24px;
+  font-family: "sansProBold";
+}
+
+a:hover{
+  color: #6c7373;
+}
+
+.body_div{
+  margin: auto;
+  padding: 10px;
+  max-width: 1000px;
+}
+
+#about_body{
+  text-align: justify;
+  font-size: 24px;
+  line-height: 2em;
+}
+
+#races_body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#board_body{
+  margin: auto;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.boardMember{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boardMember h2, .boardMember h3{
+  margin: 0px;
+}
+
+dt{
+  font-family: "sansProBold";
+}
+
+#contact{
+  text-align: center;
+}
