@@ -146,6 +146,10 @@ dt{
   font-family: "sansProBold";
 }
 
+#meme{
+  transform: rotate(10deg) translate(20px);
+}
+
 #contact{
   text-align: center;
 }
